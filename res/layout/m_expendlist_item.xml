@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="horizontal"
+ android:padding="5.0dip" android:background="@drawable/mm_listitem_grey_normal" >
+ 
+ <ImageView
+  android:id="@+id/face"
+  android:layout_width="70dip"
+  android:layout_height="70dip" 
+  />
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:orientation="vertical" >
+
+     <TextView
+         android:id="@+id/nickname"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+          android:textSize= "30sp"
+          android:text="我叫什么" android:textColor="#FF000000"  />
+     
+  	<TextView
+         android:id="@+id/maxim"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+          android:textSize= "15sp"
+            android:text="这家伙很懒" 	/>
+     
+ </LinearLayout>
+ 
+</LinearLayout>

@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/m_tab_contack_view" >
+    
+     <LinearLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_horizontal|center_vertical"  >  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="通讯录"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" />       
+			</LinearLayout>
+			
+    <ExpandableListView
+        android:id="@+id/expendlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_gray"
+        android:cacheColorHint="@color/whiteGray"
+        android:childDivider="@color/bg_gray"
+        android:choiceMode="singleChoice"
+        android:divider="#ff888888"
+        android:dividerHeight="1sp"
+        android:groupIndicator="@null" >
+
+    </ExpandableListView> 
+</LinearLayout>

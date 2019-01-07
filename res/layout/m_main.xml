@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+        
+    <RelativeLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:orientation="vertical" >
+     
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+     
+         >
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bottom_bar"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/main_tab_weitalk"
+                style="@style/MMTabButton"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/tab_weixin_normal"
+                android:text="微聊" />
+
+            <RadioButton
+                android:id="@+id/main_tab_contact"
+                style="@style/MMTabButton"
+                android:layout_weight="1.0"
+                android:checked="false"
+                android:drawableTop="@drawable/tab_address_normal"
+                android:text="通讯录" />
+
+            <RadioButton
+                android:id="@+id/main_tab_find"
+                style="@style/MMTabButton"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/tab_find_frd_normal"
+                android:text="发现" />
+
+            <RadioButton
+                android:id="@+id/main_tab_settings"
+                style="@style/MMTabButton"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/tab_settings_normal"
+                android:text="设置" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/main_tab_new_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/red_dot_middle_2x"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+    </FrameLayout>
+    
+    </RelativeLayout>
+ 
+</FrameLayout>
